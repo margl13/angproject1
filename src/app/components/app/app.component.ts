@@ -11,8 +11,4 @@ import {PostService} from '../../services/post.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  users: User[];
-  constructor(private userService: UserService) {
-    this.userService.users().subscribe(value => this.users = value);
-  }
 }

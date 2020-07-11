@@ -1,5 +1,6 @@
 import {Component, Input} from '@angular/core';
 import { Comment } from '../../models/Comment';
+import {HttpClient} from '@angular/common/http';
 
 
 @Component({
@@ -10,6 +11,6 @@ import { Comment } from '../../models/Comment';
 export class CommentComponent  {
   @Input()
   comment: Comment;
-  constructor() { }
+  constructor(private httpClient: HttpClient) { }
 
 }
